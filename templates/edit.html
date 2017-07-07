@@ -5,7 +5,7 @@
 <form action="/signup" method="post">
     <p>
     <label for="username">Username:</label>
-        <input type="text" id="username" name="username" value="{{ username }}" required />
+        <input type="text" name="username" value="{{ username }}" required />
     {% if error %}
         <span class="error">{{ error }}</span>
     {% endif %}
@@ -13,7 +13,7 @@
 
     <p>
     <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required/>
+        <input type="password" name="password" required/>
     {% if error2 %}
         <span class="error">{{ error2 }}</span>
     {% endif %}
@@ -21,7 +21,7 @@
 
     <p>
     <label for="verify-password">Verify Password:</label>
-        <input type="password" id="verify-password" name="verify-password" required/>
+        <input type="password" name="verify-password" required/>
     {% if error2 %}
         <span class="error">{{ error2 }}</span>
     {% endif %}
@@ -29,7 +29,7 @@
 
     <p>
     <label for="email">Email (optional):</label>
-        <input type="text" id="email" name="email" value="{{ email }}" />
+        <input type="text" name="email" value="{{ email }}" />
     {% if error3 %}
         <span class="error">{{ error3 }}</span>
     {% endif %}
